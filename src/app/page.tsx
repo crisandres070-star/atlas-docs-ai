@@ -1,3 +1,6 @@
+import React from "react";
+
+
 "use client";
 
 import Image from "next/image";
@@ -150,18 +153,19 @@ function Feature({
   title,
   desc,
 }: {
-  icon: JSX.Element;
+  icon: React.ReactNode;
   title: string;
   desc: string;
 }) {
   return (
-    <div className="bg-[#0F172A] p-6 rounded-xl border border-slate-800 shadow-lg">
+    <div className="bg-[#0f172a] p-6 rounded-xl border border-slate-800 shadow-lg">
       <div className="mb-4">{icon}</div>
-      <h3 className="text-lg font-bold text-white mb-2">{title}</h3>
+      <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
       <p className="text-slate-400">{desc}</p>
     </div>
   );
 }
+
 
 function PriceCard({
   title,
